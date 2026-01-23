@@ -31,3 +31,7 @@ DTexturePack pozwala:
 5. Kliknij **Generate Pack** i pobierz paczkę  
 
 ---
+## 📋 CHANGELOG
+
+Wszystkie zmiany w projekcie są dokumentowane w pliku **CHANGELOG**:  
+👉 https://github.com/danielo535/DTexturePack/blob/main/CHANGELOG.md
