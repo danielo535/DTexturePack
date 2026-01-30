@@ -4,6 +4,23 @@ Wszystkie istotne zmiany w projekcie **DTexturePack** będą dokumentowane w tym
 
 ---
 
+## [v0.1.2] - 2026-01-30
+
+### Added
+- Dodano animacje na stronie
+- Dodano informacje o procesie generowania texturepacka
+- Dodano automatyczne pobieranie tekstur dla przedmiotów, których modele w nowszych wersjach Minecrafta nie wyświetlały się poprawnie
+- Dodano przycisk prowadzący do repozytorium projektu
+
+### Changed
+- Zmieniono wygląd komunikatów na stronie
+- Zmieniono strukturę folderów modeli
+
+### Fix
+- Naprawiono generowanie paczek dla Geyser
+
+---
+
 ## [v0.1.1] - 2026-01-22
 
 ### Added
