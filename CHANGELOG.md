@@ -1,48 +1,54 @@
-# 📝 CHANGELOG
+# Changelog
 
-Wszystkie istotne zmiany w projekcie **DTexturePack** będą dokumentowane w tym pliku.
+Wszystkie zmiany w projekcie **DTexturePack** są dokumentowane w tym pliku.
+
+---
+
+## [v0.1.3] - 2026-01-30
+
+### Changed
+- Całkowicie przebudowano interfejs użytkownika (UI) strony.
+- Zoptymalizowano pomniejsze elementy wizualne oraz funkcjonalne.
 
 ---
 
 ## [v0.1.2] - 2026-01-30
 
 ### Added
-- Dodano animacje na stronie
-- Dodano informacje o procesie generowania texturepacka
-- Dodano automatyczne pobieranie tekstur dla przedmiotów, których modele w nowszych wersjach Minecrafta nie wyświetlały się poprawnie
-- Dodano przycisk prowadzący do repozytorium projektu
+- Zaimplementowano animacje interfejsu użytkownika.
+- Dodano wskaźnik statusu informujący o postępie procesu generowania paczki.
+- Wprowadzono mechanizm automatycznego pobierania tekstur dla przedmiotów, których modele w nowszych wersjach gry nie wyświetlały się poprawnie (auto-fix).
+- Dodano bezpośredni odnośnik do repozytorium projektu na GitHubie.
 
 ### Changed
-- Zmieniono wygląd komunikatów na stronie
-- Zmieniono strukturę folderów modeli
+- Zaktualizowano styl wizualny powiadomień systemowych.
+- Zmodyfikowano strukturę katalogów modeli wewnątrz generowanej paczki dla lepszej kompatybilności.
 
-### Fix
-- Naprawiono generowanie paczek dla Geyser
+### Fixed
+- Naprawiono błąd uniemożliwiający poprawne generowanie paczek dla platformy Geyser.
 
 ---
 
 ## [v0.1.1] - 2026-01-22
 
 ### Added
-- Implementacja **bloków (Blocks)** dla **Minecraft Bedrock Edition**
-- Dodanie **zwykłej zbroi (Armor)** wraz z pełną implementacją pod **Bedrock Edition**
-- Obsługa generowania odpowiednich plików i struktury paczki dla Bedrock
+- Dodano pełną obsługę tekstur bloków (Blocks) dla Minecraft Bedrock Edition.
+- Zaimplementowano obsługę pancerzy (Armor) dla Minecraft Bedrock Edition.
+- Opracowano generator struktury plików `.json` oraz manifestów specyficznych dla wersji Bedrock.
 
 ---
 
 ## [v0.1.0] - 2026-01-20
 
 ### Added
-- Pierwsza publiczna wersja narzędzia DTexturePack
-- Podstawowa konfiguracja paczki (nazwa, opis, ikona)
-- Generowanie paczek tekstur dla:
+- **Pierwsze wydanie publiczne (Initial Release).**
+- Udostępniono konfigurator metadanych paczki (nazwa, opis, ikona).
+- Zaimplementowano generowanie paczek dla platform:
   - Minecraft Java Edition
   - Minecraft Bedrock Edition
-- Dodawanie tekstur przedmiotów (Items)
-- Eksport paczki do pliku ZIP
+- Dodano funkcję importu tekstur przedmiotów (Items).
+- Umożliwiono eksport gotowego projektu do pliku `.zip`.
 
 ---
 
-### Notes
-- Projekt znajduje się w fazie **BETA**
-- Funkcje mogą ulegać zmianom lub rozszerzeniom w kolejnych wersjach
+> **Nota:** Projekt znajduje się w fazie **BETA**. Funkcjonalności mogą ulegać znaczącym zmianom w kolejnych wersjach bez zachowania wstecznej kompatybilności.
