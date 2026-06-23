@@ -1,16 +1,107 @@
 <div align="center">
 
-  <img src="https://dtexturepack.danielo535.pl/og-image.png" alt="DTexturePack Logo" width="150" height="250" />
-  
-  **Twórz własne paczki tekstur do Minecrafta w przeglądarce.**  
-  Szybko. Prosto. Bez instalacji.
+  <img src="https://image.nicecode.pl/img/logo/nice-logo.png" alt="TexturePack Logo" width="160" />
+
+  # TexturePack
+
+  Twórz własne paczki tekstur do Minecraft bezpośrednio w przeglądarce.
+
+  Szybko, intuicyjnie i bez instalacji dodatkowego oprogramowania.
+
+  <br/>
 
   [![Website Status](https://img.shields.io/website?label=Status&style=for-the-badge&url=https%3A%2F%2Fdtexturepack.danielo535.pl)](https://dtexturepack.danielo535.pl)
   [![Version](https://img.shields.io/badge/Version-BETA-orange?style=for-the-badge)](https://dtexturepack.danielo535.pl)
-  [![Platform](https://img.shields.io/badge/Minecraft-Java%20%26%20Bedrock-success?style=for-the-badge&logo=minecraft)](https://dtexturepack.danielo535.pl)
-  
-  [🌐 Otwórz Generator](https://dtexturepack.danielo535.pl) • [🐛 Zgłoś Błąd](https://github.com/danielo535/DTexturePack/issues) • [📜 Changelog](CHANGELOG.md)
+  [![Minecraft](https://img.shields.io/badge/Minecraft-Java%20%26%20Bedrock-success?style=for-the-badge&logo=minecraft)](https://dtexturepack.danielo535.pl)
 
+  <br/>
+
+  <a href="https://dtexturepack.danielo535.pl">Otwórz generator</a>
+  •
+  <a href="https://github.com/danielo535/DTexturePack/issues">Zgłoś błąd</a>
+  •
+  <a href="CHANGELOG.md">Changelog</a>
+
+</div>
+
+---
+
+## O projekcie
+
+**TexturePack** to webowe narzędzie do tworzenia paczek zasobów (resource packów) dla Minecraft Java Edition oraz Bedrock Edition.
+
+Projekt automatyzuje proces tworzenia paczek tekstur, modeli oraz konfiguracji, eliminując konieczność ręcznej edycji plików.
+
+Dzięki temu użytkownik może skupić się na tworzeniu zasobów, a nie strukturze plików gry.
+
+---
+
+## Funkcje
+
+- Tworzenie paczek tekstur dla Minecraft Java i Bedrock
+- Obsługa CustomModelData
+- Dodawanie własnych modeli 3D
+- Automatyczne przypisywanie tekstur do modeli
+- Automatyczna podmiana tekstur dla dodanych modeli 3D
+- Obsługa bloków, przedmiotów i pancerzy
+- Eksport gotowego projektu do pliku ZIP
+
+---
+
+## Zarządzanie projektem
+
+- Możliwość ponownego załadowania projektu TXT/JSON do edycji
+- Zapisywanie sesji pracy bez utraty danych
+- Eksport projektu do jednego pliku `.dtpack`
+- Import pliku `.dtpack` w celu kontynuowania edycji
+- Możliwość udostępniania projektu innym użytkownikom poprzez plik `.dtpack`
+
+---
+
+## Interfejs
+
+- Webowy interfejs bez instalacji
+- Drag & Drop dla plików i obrazów
+- Wklejanie (Ctrl + V) grafik i modeli bezpośrednio do projektu
+- Intuicyjny system zarządzania zasobami
+
+---
+
+## Cel projektu
+
+Celem TexturePack jest uproszczenie procesu tworzenia resource packów oraz automatyzacja powtarzalnych kroków.
+
+Projekt skupia się na:
+- wygodzie użytkownika
+- automatyzacji procesu
+- kompatybilności między Java i Bedrock
+- minimalizacji ręcznej konfiguracji
+
+---
+
+## Licencja
+
+Projekt znajduje się w fazie BETA. Funkcje mogą ulegać zmianom bez zachowania pełnej kompatybilności wstecznej.- Automatyczne przypisywanie tekstur do modeli
+- Obsługa bloków, przedmiotów i pancerzy
+- Eksport gotowego projektu do pliku ZIP
+- Webowy interfejs bez instalacji
+
+---
+
+## Cel projektu
+
+Celem TexturePack jest uproszczenie procesu tworzenia resource packów i zmniejszenie ilości ręcznej konfiguracji wymaganej przez Minecrafta.
+
+Projekt skupia się na:
+- automatyzacji
+- kompatybilności między wersjami
+- wygodzie użytkownika
+
+---
+
+## Licencja
+
+Projekt znajduje się w fazie BETA. Funkcje mogą ulegać zmianom bez zachowania pełnej kompatybilności wstecznej.
 </div>
 
 ---
