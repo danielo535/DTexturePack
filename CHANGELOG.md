@@ -4,6 +4,91 @@ Wszystkie zmiany w projekcie **DTexturePack** są dokumentowane w tym pliku.
 
 ---
 
+## [v0.1.5] - 2026-07-12
+
+### Added
+
+* Wprowadzono **Pack Presser** — system walidacji projektu przed eksportem paczki:
+
+  * wykrywanie błędów i ostrzeżeń w poszczególnych kategoriach (ustawienia, przedmioty, bloki, zbroja, symbole, łuk, kusza),
+  * automatyczne naprawy (duplikaty `CustomModelData`, konflikty slotów tekstury, domyślna nazwa i wersja paczki, reset niepoprawnego `.mcmeta`),
+  * nawigacja z raportu walidacji bezpośrednio do edytowanego zasobu,
+  * blokada generowania paczki do momentu pomyślnego przejścia walidacji.
+* Dodano **interaktywne podglądy 3D** oparte na Three.js:
+
+  * obracane podglądy modeli 3D przedmiotów (Blockbench),
+  * podgląd bloków jako sześcian 3D w siatce i edytorze,
+  * edytor transformacji modelu (`display`: thirdperson, firstperson, gui, ground, fixed),
+  * generowanie miniatur (snapshotów) oraz preload podglądów poza widocznym obszarem.
+* Dodano **pełną obsługę języków polskiego i angielskiego**:
+
+  * tłumaczenie interfejsu edytora, landingu i Pack Presser,
+  * przełącznik języka z zapisem preferencji w cookie,
+  * automatyczne wykrywanie języka z nagłówka `Accept-Language`.
+* Dodano **stronę dokumentacji `/docs`**:
+
+  * przewodnik PL/EN obejmujący m.in. pierwsze kroki, `CustomModelData`, opisy z kodami §, format `.dtpack`, strukturę paczki i FAQ,
+  * wyszukiwarka treści dokumentacji.
+* Przebudowano **stronę marketingową (Landing Page)**:
+
+  * sekcje: hero, funkcje, edytor, platformy, workflow i CTA,
+  * **na żywo aktualizowane statystyki serwisu** (liczba wygenerowanych paczek Java / Bedrock / Geyser),
+  * odznaki wsparcia platform per funkcja (Java / Bedrock / both / partial / WIP).
+* Dodano **autosave sesji w przeglądarce** — automatyczny zapis stanu projektu w `localStorage` z możliwością przywrócenia po powrocie na stronę.
+* Dodano **overlay generowania paczki** z wielofazowym postępem (przygotowanie → wysyłanie → budowa na serwerze → pobieranie).
+* Rozbudowano moduł **symboli / czcionek (Fonts)**:
+
+  * automatyczne wyliczanie metryk glifu (`ascent`, `height`) z pliku PNG,
+  * podgląd symbolu w kontekście linii tekstu Minecraft,
+  * eksport dla Java Edition oraz eksperymentalny eksport dla Bedrock Edition.
+* Dodano nowe elementy interfejsu edytora:
+
+  * siatka assetów z paginacją, filtrowaniem i konfiguracją gęstości kolumn,
+  * filtry przedmiotów (simple / animacja / 3D / CMD / mcmeta),
+  * pobieranie pojedynczych plików lub archiwum ZIP z karty zasobu,
+  * edytor opisu paczki z kodami formatowania Minecraft (§) i podglądem kolorów,
+  * wyszukiwany wybór wersji Minecraft (`pack_format`),
+  * odznaki wsparcia platform przy poszczególnych zakładkach.
+
+### Changed
+
+* Zaktualizowano identyfikację wizualną projektu:
+
+  * zmieniono branding z **NiceCode** na **TexturePack**,
+  * odświeżono logo, nazwę i opis aplikacji.
+* Przebudowano architekturę frontendu:
+
+* Zmieniono proces generowania paczek — eksport wymaga teraz przejścia walidacji **Pack Presser** (wcześniej generowanie uruchamiało się od razu).
+* Zastąpiono własne powiadomienia systemowe biblioteką **Sonner** z obsługą tłumaczeń.
+* Rozbudowano istniejące zakładki edytora:
+
+  * **Bloki** — siatka z podglądem 3D, paginacja i integracja z walidacją,
+  * **Zbroja** — siatka, podpowiedzi platform i UI `CustomModelData`,
+  * **Przedmioty** — siatka z podglądem 3D, filtry tagów i edytor modelu inline,
+  * **Symbole** — siatka z auto-metriki i podglądem glifu.
+* Ujednolicono opis platformy **Geyser** w interfejsie jako hybrydę Java + Bedrock z wyraźnym oznaczeniem obsługiwanych funkcji.
+
+### Improved
+
+* Usprawniono wydajność podglądów 3D dzięki cache'owaniu tekstur, geometrii i snapshotów miniatur.
+* Zwiększono wygodę korzystania z edytora:
+
+  * responsywny sidebar na urządzeniach mobilnych,
+  * wspólny panel zarządzania zasobami (`ManagerPanel`) we wszystkich zakładkach,
+  * ujednolicony dialog edycji zasobu z Drag & Drop i podglądem tekstur,
+  * dialog „Nowa sesja” z potwierdzeniem przed wyczyszczeniem pracy.
+* Rozszerzono metody przesyłania plików (Drag & Drop oraz Clipboard Paste) na wszystkie typy zasobów w edytorze.
+
+### Fixed
+
+* Dodano walidację po stronie serwera przed budową paczki (`GenerateRequestValidator`) — blokada generowania przy brakujących polach lub niepoprawnym formacie animacji.
+* Naprawiono obsługę duplikatów `CustomModelData` oraz konfliktów slotów tekstury poprzez auto-naprawy Pack Presser.
+* Wprowadzono ustrukturyzowane odpowiedzi błędów HTTP zamiast generycznych kodów 500.
+* Dodano ostrzeżenie przy przepełnieniu limitu `localStorage` podczas autosave sesji.
+* Poprawiono komunikaty przy imporcie archiwum ZIP bez osadzonego pliku `data.dtpack`.
+
+---
+
 ## [v0.1.4] - 2026-06-22
 
 ### Added
