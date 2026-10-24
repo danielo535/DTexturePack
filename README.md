@@ -1,12 +1,12 @@
 <div align="center">
 
-  <img src="https://image.nicecode.pl/img/logo/nice-logo.png" alt="TexturePack Logo" width="160" />
+  <img src="https://image.nicecode.pl/img/logo/nice-logo.png" alt="DTexturePack Logo" width="140" />
 
-  # TexturePack
+  # DTexturePack
 
-  Twórz własne paczki tekstur do Minecraft bezpośrednio w przeglądarce.
+  **Twórz własne paczki zasobów do Minecrafta bezpośrednio w przeglądarce.**
 
-  Szybko, intuicyjnie i bez instalacji dodatkowego oprogramowania.
+  Szybko, intuicyjnie i bez konieczności instalacji dodatkowego oprogramowania.
 
   <br/>
 
@@ -16,11 +16,7 @@
 
   <br/>
 
-  <a href="https://dtexturepack.danielo535.pl">Otwórz generator</a>
-  •
-  <a href="https://github.com/danielo535/DTexturePack/issues">Zgłoś błąd</a>
-  •
-  <a href="CHANGELOG.md">Changelog</a>
+  [Otwórz generator](https://dtexturepack.danielo535.pl) • [Zgłoś błąd](https://github.com/danielo535/DTexturePack/issues) • [Changelog](CHANGELOG.md)
 
 </div>
 
@@ -28,119 +24,55 @@
 
 ## O projekcie
 
-**TexturePack** to webowe narzędzie do tworzenia paczek zasobów (resource packów) dla Minecraft Java Edition oraz Bedrock Edition.
+**DTexturePack** to zaawansowane narzędzie webowe służące do automatycznego tworzenia i edycji paczek zasobów (*resource packów*) dla **Minecraft Java Edition** oraz **Bedrock Edition**.
 
-Projekt automatyzuje proces tworzenia paczek tekstur, modeli oraz konfiguracji, eliminując konieczność ręcznej edycji plików.
+Aplikacja zdejmuje z twórcy ciężar ręcznego tworzenia struktur folderów, edycji plików JSON czy konfigurowania metadanych. Pozwala skupić się na samym procesie twórczym – niezależnie od tego, czy przygotowujesz paczkę pod PvP, Survival, czy rozbudowany serwer RPG.
 
-Dzięki temu użytkownik może skupić się na tworzeniu zasobów, a nie strukturze plików gry.
-
----
-
-## Funkcje
-
-- Tworzenie paczek tekstur dla Minecraft Java i Bedrock
-- Obsługa CustomModelData
-- Dodawanie własnych modeli 3D
-- Automatyczne przypisywanie tekstur do modeli
-- Automatyczna podmiana tekstur dla dodanych modeli 3D
-- Obsługa bloków, przedmiotów i pancerzy
-- Eksport gotowego projektu do pliku ZIP
+> **Status projektu:** Projekt znajduje się w fazie **BETA**. Funkcje są aktywnie rozwijane i mogą ulegać zmianom.
 
 ---
 
-## Zarządzanie projektem
+## Funkcje i możliwości
 
-- Możliwość ponownego załadowania projektu TXT/JSON do edycji
-- Zapisywanie sesji pracy bez utraty danych
-- Eksport projektu do jednego pliku `.dtpack`
-- Import pliku `.dtpack` w celu kontynuowania edycji
-- Możliwość udostępniania projektu innym użytkownikom poprzez plik `.dtpack`
-
----
-
-## Interfejs
-
-- Webowy interfejs bez instalacji
-- Drag & Drop dla plików i obrazów
-- Wklejanie (Ctrl + V) grafik i modeli bezpośrednio do projektu
-- Intuicyjny system zarządzania zasobami
+| Obszar | Opis funkcji |
+| :--- | :--- |
+| **Kreator i edycja** | Intuicyjny interfejs, obsługa CustomModelData, import i podmiana tekstur dla modeli 3D, bloki, przedmioty i pancerze. |
+| **Cross-Platform** | Wsparcie dla wyboru wersji gry, edycji Java, Bedrock oraz integracji z Geyser. |
+| **Wygoda pracy** | Drag & Drop dla plików, obsługa wklejania bezpośrednio ze schowka (`Ctrl + V`), brak konieczności instalacji. |
+| **Zarządzanie projektem** | Zapis i odczyt sesji w dedykowanym formacie `.dtpack`, opcja edycji istniejących paczek ZIP, eksport do `.zip`. |
 
 ---
 
-## Cel projektu
+## Szybki start
 
-Celem TexturePack jest uproszczenie procesu tworzenia resource packów oraz automatyzacja powtarzalnych kroków.
+Tworzenie nowej paczki sprowadza się do czterech prostych kroków:
 
-Projekt skupia się na:
-- wygodzie użytkownika
-- automatyzacji procesu
-- kompatybilności między Java i Bedrock
-- minimalizacji ręcznej konfiguracji
-
----
-
-## Licencja
-
-Projekt znajduje się w fazie BETA. Funkcje mogą ulegać zmianom bez zachowania pełnej kompatybilności wstecznej.- Automatyczne przypisywanie tekstur do modeli
-- Obsługa bloków, przedmiotów i pancerzy
-- Eksport gotowego projektu do pliku ZIP
-- Webowy interfejs bez instalacji
+1. **Otwórz generator:** Wejdź na stronę [dtexturepack.danielo535.pl](https://dtexturepack.danielo535.pl).
+2. **Skonfiguruj projekt:** Podaj nazwę paczki, opis, wybierz docelową wersję gry oraz wgraj ikonę.
+3. **Dodaj zasoby:** Przeciągnij pliki PNG lub modele 3D do odpowiednich sekcji (Przedmioty, Bloki, Zbroje).
+4. **Pobierz i używaj:** Wygeneruj plik `.zip` i umieść go w folderze `resourcepacks` w katalogu gry.
 
 ---
 
-## Cel projektu
+## Format projektu (.dtpack)
 
-Celem TexturePack jest uproszczenie procesu tworzenia resource packów i zmniejszenie ilości ręcznej konfiguracji wymaganej przez Minecrafta.
+Aplikacja wspiera autorski format `.dtpack`, który umożliwia:
 
-Projekt skupia się na:
-- automatyzacji
-- kompatybilności między wersjami
-- wygodzie użytkownika
-
----
-
-## Licencja
-
-Projekt znajduje się w fazie BETA. Funkcje mogą ulegać zmianom bez zachowania pełnej kompatybilności wstecznej.
-</div>
+- Bezstratny zapis i odczyt stanu pracy w dowolnym momencie.
+- Łatwe dzielenie się edytowalną wersją projektu z innymi twórcami.
+- Szybki powrót do edycji bez konieczności ponownej konfiguracji zasobów.
 
 ---
 
-## ⚡ O Projekcie
+## Licencja i wsparcie
 
-**DTexturePack** to zaawansowane narzędzie webowe, które zdejmuje z Ciebie ciężar ręcznego tworzenia folderów i plików konfiguracyjnych. Skup się na grafice, a my zajmiemy się resztą. Niezależnie od tego, czy tworzysz paczkę pod PvP, Survival czy RPG – zrobisz to tutaj.
+Projekt jest udostępniany w fazie rozwojowej. Masz pomysł na nową funkcję lub znalazłeś błąd? 
 
-> ⚠️ **Status:** Projekt jest w fazie **BETA**. Aktywnie rozwijamy funkcje i naprawiamy błędy.
+- Przejrzyj historię zmian w pliku [CHANGELOG.md](CHANGELOG.md).
+- Zgłoś uwagę w zakładce [Issues na GitHubie](https://github.com/danielo535/DTexturePack/issues).
 
----
+<br/>
 
-## 🔥 Główne Funkcje
-
-| 🛠️ Kreator | 🎮 Kompatybilność | 💾 Zarządzanie |
-| :--- | :--- | :--- |
-| **Intuicyjny UI** – wszystko w jednym miejscu. | **Cross-Platform** – wsparcie dla Java Edition, Bedrock Edition oraz Geyser. | **Import ZIP** – edytuj istniejące paczki. |
-| **Podgląd na żywo** – zobacz ikonę i opisy. | **Wersjonowanie** – wybór wersji gry. | **Błyskawiczny Export** – gotowa paczka w sekundę. |
-| **Kategorie** – Items, Blocks, Armor, Symbol. | **Bez instalacji** – działa w Chrome, Firefox, Edge. | **Auto-Struktura** – poprawne pliki JSON/MCMETA. |
-
----
-
-## 🚀 Jak zacząć?
-
-Nie musisz być programistą. Wystarczą 4 kroki:
-
-1. **Wejdź na stronę:** [dtexturepack.danielo535.pl](https://dtexturepack.danielo535.pl)
-2. **Skonfiguruj:** Ustal nazwę, opis, wybierz wersję (np. 1.20) i wgraj ikonę paczki.
-3. **Dodaj zasoby:** Przeciągnij swoje pliki PNG do odpowiednich sekcji (Miecze, Bloki, Zbroje).
-4. **Pobierz:** Kliknij **Generate Pack** i wrzuć plik `.zip` do folderu `resourcepacks` w Minecrafcie.
-
----
-
-## 🤝 Wsparcie i Rozwój
-
-Masz pomysł na nową funkcję? Znalazłeś błąd?
-Sprawdź plik [CHANGELOG.md](CHANGELOG.md), aby zobaczyć ostatnie zmiany, lub utwórz nowe zgłoszenie w zakładce **Issues**.
-
----
 <div align="center">
-  <sub>Made with ❤️ by Danielo535</sub>
+  <sub>Made with ❤️ by <a href="https://github.com/danielo535">Danielo535</a></sub>
 </div>
